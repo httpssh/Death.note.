@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'SpookyFont';
+  src: url('path-to-your-font/spookyfont.woff2') format('woff2'),
+       url('path-to-your-font/spookyfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.shinigami-container {
+  text-align: center;
+}
+
+.shinigami-text {
+  font-family: 'SpookyFont', sans-serif;
+  font-size: 48px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

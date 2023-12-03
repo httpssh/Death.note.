@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="https://db.onlinewebfonts.com/c/dd32798ad43b887f093f144d8ac8e017?family=DEATHNOTE+Font">
   <script src="1.js"></script>
   <style>
     body, html {
@@ -9,12 +12,13 @@
       padding: 0;
       height: 100%;
       overflow: hidden;
+      font-family: 'DEATHNOTE Font', sans-serif;
     }
 
     .shinigami-container {
       position: absolute;
       top: 50%;
-      left: 16%;
+      left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
       z-index: 2;
@@ -43,6 +47,18 @@
 
     #summon-sound {
       display: none; /* Hide the audio element initially */
+    }
+
+    .shinigami-text,
+    #summon-button,
+    #close-button {
+      font-family: 'DEATHNOTE Font', sans-serif;
+    }
+
+    @media screen and (max-width: 600px) {
+      .shinigami-container {
+        width: 80%;
+      }
     }
   </style>
 </head>
